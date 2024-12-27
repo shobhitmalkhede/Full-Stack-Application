@@ -1,36 +1,35 @@
-This is the file where you provide instructions on how to set up, run, and deploy the backend application.
+This file contains instructions for setting up, running, and understanding the frontend of the application.
 
-# Spring Boot Backend
+# React User Management
 
 ## Project Setup
 
 1. Clone this repository:
 
-git clone https://github.com/yourusername/backend.git
+git clone https://github.com/yourusername/frontend.git
 
 
 2. Go to the project directory:
 
-cd backend
+cd frontend
 
 
-3. Build the project using Maven:
+3. Install dependencies:
 
-mvn clean install
-
-
-4. Run the Spring Boot application:
-
-mvn spring-boot:run
+npm install
 
 
-## Configuration
+4. Start the React app:
 
-- The backend connects to MySQL. Ensure MySQL is running and the database is set up correctly:
-- For development, the database is configured in `application-dev.properties`.
-- For production, update `application-prod.properties` with your database credentials.
+npm start
 
-## API Endpoints
 
-- **GET /api/users**: Fetch all users.
-- **POST /api/users**: Create a new user (requires `name` and `email` fields).
+The app will be running on `http://localhost:3000`.
+
+## Features
+- List of users fetched from the backend.
+- A form to add new users.
+
+## Backend Setup
+
+Ensure the backend Spring Boot API is running on `http://localhost:8080/api/users` before using the frontend.
